@@ -1,0 +1,170 @@
+.dashboard-container {
+  display: block;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 3px solid #979797;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.top-nav .logo {
+  margin: 0 10px;
+}
+
+.top-nav .nav-links {
+  display: flex;
+  margin-left: 100px;
+}
+
+.top-nav a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2f3e72;
+  text-decoration: none;
+  padding: 5px 6px;
+}
+
+.top-nav a:hover {
+  text-decoration: underline 2px solid;
+}
+
+.dashboard-title{
+  display: flex;
+  flex-direction: column;
+  margin: -10px 0;
+}
+
+.dashboard-title h1 {
+  font-size: 14px;
+  color:#2f3e72;
+}
+
+.dashboard-title p{
+  font-size: 10px;
+  padding: 0 5px;
+  margin: -1px 0;
+}
+
+.dashboard-title .username{
+  color: #2f3e72 ;
+  text-decoration: underline 2px solid #b51616;
+}
+
+.dashboard-title .user-role{
+  color: #b51616 ;
+}
+.sidebar {
+  position: fixed;
+  top: 80px; /* Same as top-nav height */
+  left: 0;
+  width: 56px;
+  height: calc(100vh - 80px);
+  background-color: #2f3e72;
+  color: white;
+  padding: 20px 0;
+  overflow-y: auto;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px 20px;
+}
+
+.sidebar-menu a {
+  color: white;
+  font-size:  12px;
+  display: block;
+}
+
+.main-content{
+  margin-left: 56px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding: 20px;
+  max-width: 1200px;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  left: 28px;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.stats-cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+.charts-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.chart-box {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.metrics {
+  display: flex;
+  gap: 1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #2f3e72;
+  color: white;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 12px;
+}
