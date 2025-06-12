@@ -1,6 +1,6 @@
 <div class="container">
   <div class="left-pane">
-    <img src="assets/univen-logo.png" alt="University of Venda Logo" class="logo" />
+    <img src="assets/univen-logo.jpg" alt="University of Venda Logo" class="logo" />
     <h1 class="title">HR DASHBOARD SYSTEM</h1>
   </div>
 
@@ -15,7 +15,7 @@
         <label><input type="radio" name="role" value="officer"> HR Officer</label>
       </div>
 
-      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <form #loginForm="ngForm"  (ngSubmit)="onSubmit()">
         <input type="email" placeholder="Enter your Email Address" name="email" ngModel required />
         <input type="password" placeholder="Enter your Password" name="password" ngModel required />
         <button type="submit">Sign In</button>
